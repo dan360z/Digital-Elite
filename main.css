@@ -3,42 +3,35 @@ html, body {
     height: 100%;
     margin: 0px;
     font-family: 'avenir', sans-serif;
-    color: #fff;
-    
-    
+    color: #fff; 
 }
 
 .red_box {
     position: absolute;
     background-color: #db5461;
-    width: 50%;
+    width: 54%;
     height: 100%;
     transform: skewX(10deg);
     z-index: -1;
 }
 
-.background {
+.background1 {
     position: absolute;
-    width: 100%;
-    height: 750px;
-    z-index: -2;
-    padding: 0px;
-    margin: 0px;
-}
-
-.bg1 {
-    background-color: #db5461;
-    display: inline-block;
-    width: 40%;
+    left: 50%;
+    width: 50%;
     height: 100%;
-}
-
-.bg2 {
-    background-image: url(images/background_header.jpg);
+    background-image: url("images/background_header.jpg");
     background-size: cover;
-    display: inline-block;
-    width: 59.5%;
+    z-index: -2;
+}
+
+.background2 {
+    position: absolute;
+    width: 20%;
     height: 100%;
+    background-color: #db5461;
+    z-index: -2;
+    
 }
 
 .logo {
@@ -94,7 +87,7 @@ h1 {
 .footer {
     margin-top: 192px;
     background-color: #30343f;
-    padding: 26px 0px 12px 80px;
+    padding: 26px 0px 12px 70px;
 }
 
 .ft {
