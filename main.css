@@ -1,9 +1,10 @@
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     margin: 0px;
     font-family: 'avenir', sans-serif;
-    color: #fff; 
+    color: #fff;
 }
 
 .red_box {
@@ -17,8 +18,8 @@ html, body {
 
 .background1 {
     position: absolute;
-    left: 50%;
-    width: 50%;
+    left: 40%;
+    width: 60%;
     height: 100%;
     background-image: url("images/background_header.jpg");
     background-size: cover;
@@ -31,37 +32,44 @@ html, body {
     height: 100%;
     background-color: #db5461;
     z-index: -2;
-    
+
 }
 
 .logo {
-    width: 150px;
-    margin: 50px 0px 0px 65px;
+    width: 180px;
+    margin: 3.5% 4% 0% 4%;
 }
 
 ul {
-    color: #30343f;
-    box-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 15px #000;
     float: right;
     background-color: #fff;
-    margin: 50px 30px 0px 0px;
+    margin: 3.5% 3% 0% 3%;
     text-align: center;
-    padding: 5px 8px;
+    padding: 10px 20px;
     font-weight: bold;
 }
 
 li {
     display: inline-block;
-    list-style-type: none;
-    margin-left: 8px;
+    margin-left: 10px;
 }
 
-.d {
+a {
+    text-decoration: none;
+    color: #30343f;
+}
+
+.digital {
     color: #30343f;
 }
 
 h1 {
-    margin: 200px 0px 0px 65px;
+    margin: 180px 0px 0px 65px;
+}
+
+.break {
+    display: none;
 }
 
 .learn {
@@ -72,7 +80,7 @@ h1 {
     padding: 3px 10px;
     border: 3px solid #000;
     border-radius: 50px 50px 50px 50px;
-    margin: 52px 0px 0px 65px;
+    margin: 72px 0px 0px 65px;
     transition-property: color, border-color, background-color;
     transition-duration: 2s;
     transition-timing-function: ease;
@@ -81,11 +89,12 @@ h1 {
 .learn:hover {
     color: #fff;
     border-color: #fff;
-    background-color: #000;
+    background-color: #30343f;
 }
 
 .footer {
-    margin-top: 192px;
+    position: fixed;
+    top: 90%;
     background-color: #30343f;
     padding: 26px 0px 12px 70px;
 }
@@ -106,10 +115,166 @@ h1 {
 .ft .head {
     font-weight: bold;
     margin-bottom: 0px;
+    animation-name: numbers;
+    animation-iteration-count: 8;
+    animation-duration: .4s;
+    animation-timing-function: linear
 }
+
+
 
 .ft p {
     margin-top: 2px;
 }
 
+@keyframes numbers {
+    0% {
+        transform: rotatex(0deg);
+    }
+    100% {
+        transform: rotatex(720deg);
+    }
+}
 
+.num1 {
+    visibility: hidden;
+    animation-name: num1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+.num2 {
+    visibility: hidden;
+    animation-name: num2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+.num3 {
+    visibility: hidden;
+    animation-name: num3;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+.num4 {
+    visibility: hidden;
+    animation-name: num4;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes num1 {
+    0% {
+        visibility: visible;
+        transform: rotatex(0deg);
+    }
+    25% {
+        visibility: visible;
+        transform: rotatex(0deg);
+    }
+    50% {
+        visibility: visible;
+        transform: rotatex(0deg);
+    }
+    75% {
+        visibility: visible;
+        transform: rotatex(0deg);
+    }
+    100% {
+        visibility: visible;
+        transform: rotatex(0deg);
+    }
+}
+
+@keyframes num2 {
+    0% {
+        visibility: visible;
+        transform: rotatex(0deg);
+    }
+    25% {
+        visibility: visible;
+        transform: rotatex(0deg);
+    }
+    50% {
+        visibility: visible;
+        transform: rotatex(0deg);
+    }
+    75% {
+        visibility: hidden;
+        transform: rotatex(0deg);
+    }
+    100% {
+        visibility: hidden;
+        transform: rotatex(0deg);
+    }
+}
+
+
+@keyframes num3 {
+    0% {
+        visibility: visible;
+        transform: rotatex(0deg);
+    }
+    25% {
+        visibility: visible;
+        transform: rotatex(0deg);
+    }
+    50% {
+        visibility: hidden;
+        transform: rotatex(0deg);
+    }
+    75% {
+        visibility: hidden;
+        transform: rotatex(0deg);
+    }
+    100% {
+        visibility: hidden;
+        transform: rotatex(0deg);
+    }
+}
+
+
+@keyframes num4 {
+    0% {
+        visibility: visible;
+        transform: rotatex(0deg);
+    }
+    25% {
+        visibility: hidden;
+        transform: rotatex(0deg);
+    }
+    50% {
+        visibility: hidden;
+        transform: rotatex(0deg);
+    }
+    75% {
+        visibility: hidden;
+        transform: rotatex(0deg);
+    }
+    100% {
+        visibility: hidden;
+        transform: rotatex(0deg);
+    }
+}
+
+@media (max-width: 425px) {
+
+    .learn {
+        margin: 92px 0px 0px 10px;
+        font-size: 22px;
+    }
+
+    h1 {
+        margin: 180px 0px 0px 10px;
+    }
+
+    .logo {
+        width: 120px;
+        margin: 3.5% 4% 0% 4%;
+    }
+
+    .break {
+        display: inline;
+    }
+}
